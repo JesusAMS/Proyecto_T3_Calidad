@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: sistema-academico-t3
+    container_name: sistema-academico
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
